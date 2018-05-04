@@ -13,16 +13,7 @@
 {% block app_title %}{{ tethys_app.name }}{% endblock %}
 
 {% block app_navigation_items %}
-  <li class="title">App Navigation</li>
-  <li class="active"><a href="">Home</a></li>
-  <li><a href="">Jobs</a></li>
-  <li><a href="">Results</a></li>
-  <li class="title">Steps</li>
-  <li><a href="">1. The First Step</a></li>
-  <li><a href="">2. The Second Step</a></li>
-  <li><a href="">3. The Third Step</a></li>
-  <li class="separator"></li>
-  <li><a href="">Get Started</a></li>
+
 {% endblock %}
 
 {% block app_content %}
@@ -33,10 +24,12 @@
 
 {% block content_dependent_styles %}
   {{ block.super }}
-  <link href="{% static 'modis_flood/css/main.css' %}" rel="stylesheet"/>
+  <link href="{% static 'modis/css/main.css' %}" rel="stylesheet"/>
 {% endblock %}
 
 {% block scripts %}
   {{ block.super }}
-  <script src="{% static 'modis_flood/js/main.js' %}" type="text/javascript"></script>
+  <script src="{% static 'modis/js/main.js' %}" type="text/javascript"></script>
+  <script src="{% static 'modis/js/vars.js' %}" type="text/javascript"></script>
+  <script src="{% static 'modis/js/wms.js' %}" type="text/javascript"></script>
 {% endblock %}

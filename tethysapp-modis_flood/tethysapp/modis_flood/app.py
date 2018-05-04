@@ -1,18 +1,18 @@
-from tethys_sdk.base import TethysAppBase, url_map_maker
+ffrom tethys_sdk.base import TethysAppBase, url_map_maker
 
 
-class ModisFlood(TethysAppBase):
+class MODIS(TethysAppBase):
     """
-    Tethys app class for Modis Flood.
+    Tethys app class for MODIS Flood.
     """
 
-    name = 'Modis Flood'
-    index = 'modis_flood:home'
-    icon = 'modis_flood/images/icon.gif'
-    package = 'modis_flood'
-    root_url = 'modis-flood'
-    color = '#2980b9'
-    description = 'Place a brief description of your app here.'
+    name = 'Name that Perry Decides'
+    index = 'modis:home'
+    icon = 'modis/images/modis.jpg'
+    package = 'modis'
+    root_url = 'modis'
+    color = '#2c3e50'
+    description = ''
     tags = ''
     enable_feedback = False
     feedback_emails = []
@@ -26,7 +26,7 @@ class ModisFlood(TethysAppBase):
         url_maps = (
             UrlMap(
                 name='home',
-                url='modis-flood',
+                url='modis_flood',
                 controller='modis_flood.controllers.home'
             ),
         )
