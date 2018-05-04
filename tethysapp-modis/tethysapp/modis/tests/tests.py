@@ -34,16 +34,16 @@ To run any tests:
        See below for specific examples
 
         To run all tests across this app:
-            Test command: "tethys test -f tethys_apps.tethysapp.modis_flood"
+            Test command: "tethys test -f tethys_apps.tethysapp.modis"
 
         To run all tests in this file:
-            Test command: "tethys test -f tethys_apps.tethysapp.modis_flood.tests.tests"
+            Test command: "tethys test -f tethys_apps.tethysapp.modis.tests.tests"
 
         To run tests in the ModisFloodTestCase class:
-            Test command: "tethys test -f tethys_apps.tethysapp.modis_flood.tests.tests.ModisFloodTestCase"
+            Test command: "tethys test -f tethys_apps.tethysapp.modis.tests.tests.ModisFloodTestCase"
 
         To run only the test_if_tethys_platform_is_great function in the ModisFloodTestCase class:
-            Test command: "tethys test -f tethys_apps.tethysapp.modis_flood.tests.tests.ModisFloodTestCase.test_if_tethys_platform_is_great"
+            Test command: "tethys test -f tethys_apps.tethysapp.modis.tests.tests.ModisFloodTestCase.test_if_tethys_platform_is_great"
 
 To learn more about writing tests, see:
     https://docs.djangoproject.com/en/1.9/topics/testing/overview/#writing-tests

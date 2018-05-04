@@ -1,4 +1,4 @@
-ffrom tethys_sdk.base import TethysAppBase, url_map_maker
+from tethys_sdk.base import TethysAppBase, url_map_maker
 
 
 class MODIS(TethysAppBase):
@@ -26,8 +26,8 @@ class MODIS(TethysAppBase):
         url_maps = (
             UrlMap(
                 name='home',
-                url='modis_flood',
-                controller='modis_flood.controllers.home'
+                url='modis',
+                controller='modis.controllers.home'
             ),
         )
 
