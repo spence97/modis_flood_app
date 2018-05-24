@@ -52,9 +52,6 @@ var LIBRARY_OBJECT = (function() {
     layers [11] = new google.maps.KmlLayer('http://matsu-seasia.opensciencedatacloud.org//layers/file/1573',{preserveViewport: true, suppressInfoWindows: false});
     layers [12] = new google.maps.TrafficLayer();
 
-    // MODIS
-
-    layers [15] = new google.maps.KmlLayer('http://216.218.240.206:8080/geoserver/new_flood/wms/reflect?layers=new_flood:new_flood&format=kml')
 
     /************************************************************************
      *                    PRIVATE FUNCTION DECLARATIONS
